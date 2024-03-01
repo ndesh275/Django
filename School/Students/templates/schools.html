@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School List</title>
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+</head>
+<body>
+<h1>School's List</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Email</th>
+  </tr>
+    {% for y in schools %}
+  <tr>
+  <td>{{ y.id }}</td>
+   <td>{{ y.name }}</td>
+   <td>{{ y.location }}</td>
+   <td>{{ y.email }}</td>
+  </tr>
+
+    {% endfor %}
+</table>
+
+</body>
+</html>

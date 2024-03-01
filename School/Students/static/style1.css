@@ -1,0 +1,31 @@
+/*Apply styles to h1*/
+h1{
+   text-align: center; /* Center-align text */
+}
+/* Apply styles to all tables */
+table {
+  border-collapse: collapse; /* Collapse table borders into a single border */
+  width: 100%; /* Make the table take up the full width of its container */
+}
+
+/* Apply styles to table headers (th) */
+th {
+  background-color: #3498db; /* Blue background color */
+  color: white; /* White text color */
+  padding: 10px; /* Add padding around content */
+  text-align: center; /* Center-align text */
+  border: 2px solid #2980b9; /* Blue border */
+}
+
+/* Apply styles to table data cells (td) */
+td {
+  background-color: #ecf0f1; /* Light gray background color */
+  padding: 10px; /* Add padding around content */
+  text-align: center; /* Center-align text */
+  border: 2px solid #bdc3c7; /* Gray border */
+}
+
+/* Apply alternate background color to even rows */
+tr:nth-child(even) td {
+  background-color: #d5dbdb; /* Light blue background color for even rows */
+}
